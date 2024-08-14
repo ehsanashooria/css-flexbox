@@ -6,12 +6,22 @@
 
 html {
   font-size: 62.5% !important;
+
+  @media only screen and (max-width: 68.75em) {
+    font-size: 57.5% !important;
+    .container {
+      max-width: 140rem;
+    }
+  }
 }
 
 body {
   /*Font Settings*/
   font-family: "Poppins", sans-serif;
   font-style: normal;
-  font-size: 1rem;
   box-sizing: border-box;
+  background: linear-gradient(to bottom right, var(--color-primary-light), var(--color-primary-dark)) no-repeat;
+  color: var(--color-gray-dark-2);
+
+  min-height: 100vh;
 }
